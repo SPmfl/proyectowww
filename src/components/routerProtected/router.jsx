@@ -19,6 +19,7 @@ function Router(token, redirectPath='/login') {
       <Routes>
         <Route path="*" element={<img src={img} alt='' />}></Route>
         <Route path="/login" element={<LoginForm/>}></Route>
+        <Route path="" element={<Navigate to={"/login"}/>}></Route>
         <Route path="/register" element={<RegisterForm/>}></Route>
         
         <Route path="/admin" element={<Admin/>}></Route>
